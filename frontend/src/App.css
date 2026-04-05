@@ -1,0 +1,52 @@
+
+.app-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F8F9FA;
+}
+
+.h-stack-full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: aqua;
+}
+
+.app-container h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.app-container .h-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+}
+
+.app-container .h-stack > * {
+    flex: 1 1 24rem;
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .app-container .h-stack {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .app-container .h-stack > * {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+}
