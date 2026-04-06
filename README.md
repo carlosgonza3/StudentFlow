@@ -88,7 +88,17 @@ PORT=4000
 
 ---
 
-### 4. Run the Backend
+### 4. Seed / Populate the Database
+
+run it from the `backend` folder:
+
+`npm run seed`
+
+This will insert sample student records into the `StudentFlow` database.
+
+---
+
+### 5. Run the Backend
 
 Inside the `backend` folder, run:
 
@@ -100,7 +110,7 @@ The GraphQL backend should run at:
 
 ---
 
-### 5. Frontend Setup
+### 6. Frontend Setup
 
 Open the second terminal and go to the frontend folder:
 
@@ -119,16 +129,6 @@ The frontend should run at:
 `http://localhost:5173/`
 
 _**Note:** The frontend port may vary depending on your environment. Check the terminal output if needed._
-
----
-
-### 6. Seed / Populate the Database
-
-If you created a seed script, run it from the `backend` folder:
-
-`npm run seed`
-
-This will insert sample student records into the `StudentFlow` database.
 
 ---
 
